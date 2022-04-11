@@ -40,7 +40,7 @@ Widget _buildBody() {
                 icon: Icon(Icons.search, color: Colors.white)))
         ),
         _cityDetail(),
-        
+         
       ],
     ),
   );
