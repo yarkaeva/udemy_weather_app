@@ -33,12 +33,12 @@ Widget _buildBody() {
     children: [
       const TextField(
         style: TextStyle(color: Colors.white),
-        decoration: (InputDecoration(
+        decoration: InputDecoration(
           border: InputBorder.none,
           hintText: 'Enter City name',
           hintStyle: TextStyle(color: Colors.white),
           icon: Icon(Icons.search, color: Colors.white),
-        )), // тут не ставится запятая, ошибка
+        ),
       ),
       Expanded(
         child: Column(
