@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Weather Forecast',
+              // TODO: Добавь везде запятые для форматирования, чтобы не было подряд двух скобочек.
               style: TextStyle(color: Colors.white)),
           centerTitle: true,
           backgroundColor: Colors.red,
@@ -35,6 +36,7 @@ Widget _buildBody() {
               border: InputBorder.none,
               hintText: 'Enter City name',
               hintStyle: TextStyle(color: Colors.white),
+              // TODO: Добавь везде запятые для форматирования, чтобы не было подряд двух скобочек.
               icon: Icon(Icons.search, color: Colors.white)))),
       Expanded(
         child: Column(
@@ -51,17 +53,23 @@ Widget _buildBody() {
   );
 }
 
+//TODO: В функциях, которые возвращают виджеты, лучше не указывать конкретный тип, а заменить на Widget
 Column _cityDetail() {
   return Column(
     children: const [
       Text('Tyumen Oblast, RU',
+          // TODO: Добавь везде запятые для форматирования, чтобы не было подряд двух скобочек.
+
           style: TextStyle(color: Colors.white, fontSize: 35.0)),
       Text('Monday, Apr 11, 2022',
+          // TODO: Добавь везде запятые для форматирования, чтобы не было подряд двух скобочек.
+
           style: TextStyle(color: Colors.white, fontSize: 16.0))
     ],
   );
 }
 
+//TODO: В функциях, которые возвращают виджеты, лучше не указывать конкретный тип, а заменить на Widget
 Row _temperatureDetail() {
   return Row(
     mainAxisAlignment: MainAxisAlignment.center,
@@ -75,6 +83,8 @@ Row _temperatureDetail() {
       Column(
         children: [
           const Text('14°F',
+              // TODO: Добавь везде запятые для форматирования, чтобы не было подряд двух скобочек.
+
               style: TextStyle(color: Colors.white, fontSize: 40.0)),
           Text(
             'Light snow'.toUpperCase(),
@@ -86,6 +96,7 @@ Row _temperatureDetail() {
   );
 }
 
+//TODO: В функциях, которые возвращают виджеты, лучше не указывать конкретный тип, а заменить на Widget
 Row _extraWeatherDetail() {
   return Row(
     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -93,21 +104,29 @@ Row _extraWeatherDetail() {
       Column(
         children: const [
           Icon(Icons.ac_unit, color: Colors.white, size: 30),
+          // TODO: Добавь везде запятые для форматирования, чтобы не было подряд двух скобочек.
           Text('5', style: TextStyle(color: Colors.white, fontSize: 20.0)),
+          // TODO: Добавь везде запятые для форматирования, чтобы не было подряд двух скобочек.
           Text('km/hr', style: TextStyle(color: Colors.white))
         ],
       ),
       Column(
         children: const [
           Icon(Icons.ac_unit, color: Colors.white, size: 30),
+          // TODO: Добавь везде запятые для форматирования, чтобы не было подряд двух скобочек.
+
           Text('3', style: TextStyle(color: Colors.white, fontSize: 20.0)),
+          // TODO: Добавь везде запятые для форматирования, чтобы не было подряд двух скобочек.
+
           Text('%', style: TextStyle(color: Colors.white))
         ],
       ),
       Column(
         children: const [
           Icon(Icons.ac_unit, color: Colors.white, size: 30),
+          // TODO: Добавь везде запятые для форматирования, чтобы не было подряд двух скобочек.
           Text('20', style: TextStyle(color: Colors.white, fontSize: 20.0)),
+          // TODO: Добавь везде запятые для форматирования, чтобы не было подряд двух скобочек.
           Text('%', style: TextStyle(color: Colors.white))
         ],
       ),
@@ -115,6 +134,7 @@ Row _extraWeatherDetail() {
   );
 }
 
+//TODO: В функциях, которые возвращают виджеты, лучше не указывать конкретный тип, а заменить на Widget
 Column _bottomDetail() {
   return Column(
     children: [
@@ -149,11 +169,15 @@ Widget _myListView() {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               const Text('Monday',
+                  // TODO: Добавь везде запятые для форматирования, чтобы не было подряд двух скобочек.
+
                   style: TextStyle(color: Colors.white, fontSize: 25.0)),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
                   Text('6°F',
+                      // TODO: Добавь везде запятые для форматирования, чтобы не было подряд двух скобочек.
+
                       style: TextStyle(color: Colors.white, fontSize: 35.0)),
                   Icon(Icons.wb_sunny, color: Colors.white, size: 35)
                 ],
@@ -170,11 +194,15 @@ Widget _myListView() {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               const Text('Tuesday',
+                  // TODO: Добавь везде запятые для форматирования, чтобы не было подряд двух скобочек.
+
                   style: TextStyle(color: Colors.white, fontSize: 25.0)),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
                   Text('13°F',
+                      // TODO: Добавь везде запятые для форматирования, чтобы не было подряд двух скобочек.
+
                       style: TextStyle(color: Colors.white, fontSize: 35.0)),
                   Icon(Icons.wb_sunny, color: Colors.white, size: 35)
                 ],
@@ -191,11 +219,15 @@ Widget _myListView() {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               const Text('Wednesday',
+                  // TODO: Добавь везде запятые для форматирования, чтобы не было подряд двух скобочек.
+
                   style: TextStyle(color: Colors.white, fontSize: 25.0)),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
                   Text('11°F',
+                      // TODO: Добавь везде запятые для форматирования, чтобы не было подряд двух скобочек.
+
                       style: TextStyle(color: Colors.white, fontSize: 35.0)),
                   Icon(Icons.wb_sunny, color: Colors.white, size: 35)
                 ],
